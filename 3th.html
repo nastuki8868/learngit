@@ -1,0 +1,26 @@
+<html>
+ <head>
+  <title>17052218</title>
+  <script type="text/javascript" charset="utf-8">
+   function displayTime() {
+        var elt = document.getElementById("clock"); 
+        var now = new Date(); 
+        elt.innerHTML = now.toLocaleTimeString(); 
+        setTimeout(displayTime,1000); 
+   }
+   window.onload = displayTime;
+  </script>
+  <style type="text/css" media="all">
+   #clock {
+    font: bold 24pt sans;
+    background: white;
+    padding: 10px;
+   }
+   
+</style>
+ </head>
+ <body>
+    <h1>&nbsp;&nbsp;&nbsp;<img src="./stopwatch.png"></h1>
+  <span id="clock"></span>
+ </body>
+</html>

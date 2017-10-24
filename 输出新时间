@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{int a,b,c,d,x,y,z;
+scanf("%d:%d:%d",&a,&b,&c);
+d=a*3600+b*60+c+1;
+x=d/3600;
+y=(d-x*3600)/60;
+z=d-3600*x-60*y;
+if (x<24)printf("%02d:%02d:%02d",x,y,z);
+else 
+printf("00:00:00");
+	return 0;
+}

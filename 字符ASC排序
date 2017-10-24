@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main()
+ {  char a,b,c,max,x,y,z;
+   scanf("%c%c%c",&a,&b,&c);
+    x =a;
+    y=b ;
+    z =c;
+  if(x>y)
+      if(z>x)printf("%c%c%c",b,a,c);
+      else
+          {if(z>y) printf("%c%c%c",b,c,a);
+          else   printf("%c%c%c",c,b,a); }
+  else
+    if(z>y)   printf("%c%c%c", a,b,c);
+
+    else
+        {if(z>x)printf("%c%c%c",a,c,b);
+       else  printf("%c%c%c",c,a,b);}
+
+ return 0;
+ }

@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+   {char a,b,c,x,y,z;
+   scanf("%c%c%c",&a,&b,&c);
+if(a>=120)x=a-23;
+else   x=a+3;
+if(b>=120)y=b-23;
+else   y=b+3;
+if(c>=120)z=c-23;
+else  z=c+3;
+   printf("%c%c%c",x,y,z);
+   return 0;
+   }
